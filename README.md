@@ -1,44 +1,30 @@
-Usage
-Load the Dataset: The dataset should be in CSV format. Place your dataset file in the appropriate directory and update the file path in the code.
+This repository contains the implementation of a Fake News Detection model. The model uses deep learning techniques, including FastText supervised word classification and a CNN-LSTM hybrid model. The model achieves an accuracy of 91% and an F1-score of 91%.
+Project Overview;-
+This project aims to develop a robust model for detecting fake news from a given text. The model uses a hybrid architecture combining FastText for supervised word classification and CNN-LSTM for text classification. The key components of the project include data preprocessing, feature extraction, and model evaluation.
 
-Preprocess the Data: The data is cleaned and prepared for training, including removing null values, stopwords, and special characters.
+Dataset:WELFake Dataset.
+The dataset used for this project is the WELFake dataset, which consists of news articles with labeled information regarding whether the news is fake or real.
 
-Train the FastText Model: The FastText model is trained on the preprocessed text data to create word embeddings.
+Model Description
+1. Preprocessing Steps
+2. FastText Supervised Word Classification
+3. FastText was applied to the dataset for supervised word classification to learn word representations efficiently.
+4. The embeddings produced by FastText were used as input to the CNN-LSTM model.
 
-Create FastText Embeddings: Convert the cleaned text data into embeddings that can be used for training the CNN-LSTM model.
-
-Train the CNN-LSTM Model: The model is defined and trained using the generated embeddings.
-
-Evaluate the Model: The model's performance is evaluated on the test set, and results are visualized.
-
-Data Preprocessing
-The data preprocessing steps include:
-Loading the dataset using Pandas.
-Handling missing values by filling them with empty strings.
-Tokenization and removal of stopwords using NLTK.
-Text normalization, including lowercasing and removal of non-essential characters.
-Lemmatization of tokens.
-Splitting the dataset into training and testing sets.
-
-Model Training
-The model training process involves the following steps:
-Training a FastText model in unsupervised mode on the cleaned training data.
-Generating FastText embeddings for both the training and testing sets.
-Reshaping the embeddings for input into the CNN-LSTM model.
-Defining the CNN-LSTM architecture and training the model with early stopping and learning rate scheduling.
 
 Results
-The results include:
-Model accuracy and loss curves during training and validation.
-A confusion matrix visualizing the model's predictions.
-A classification report providing precision, recall, and F1-score for each class.
+The model achieved the following performance metrics:
 
-Example Output
-Test Loss: 0.2891
-Test Accuracy: 0.8891
+Accuracy: 91%
+F1-Score: 91%
+These results demonstrate the effectiveness of combining FastText word embeddings with CNN-LSTM architecture for fake news detection.
 
-Acknowledgments
-FastText for word embeddings.
-TensorFlow for deep learning framework.
-NLTK for natural language processing tools.
-The dataset used in this project.
+To run the project, follow these steps:
+
+Clone the repository:
+
+Copy code
+  https://github.com/anilkrmandal/FakeNewsDetecctor.git
+  cd FakeNewsDetecctor
+open the .ipynb file in colab/jupyter/vs code 
+and run all
