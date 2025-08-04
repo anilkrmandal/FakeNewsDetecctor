@@ -13,7 +13,7 @@ Model Description:
 
 Results:
 The model achieved the following metrics:
-- Accuracy: 91%
+- Accuracy: 91.5%
 - F1-Score: 91%
 
 These results show that combining FastText word embeddings with CNN-LSTM works well for detecting fake news.
